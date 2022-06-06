@@ -10,7 +10,7 @@ def index(request):
 
 def update(request):
     if request.method == 'POST':
-        repo = git.Repo('HMAKSYM.com.ua')
+        repo = git.Repo('hmaksymwebsite.com.ua')
         origin = repo.remotes.origin
 
         origin.pull()
